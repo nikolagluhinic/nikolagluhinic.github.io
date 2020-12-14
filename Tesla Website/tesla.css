@@ -1,0 +1,1005 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  line-height:1.15;
+  } 
+
+html {
+  scroll-behavior: smooth;
+}
+
+/******* FONTS *******/
+
+@font-face {
+  src: url(fonts/TESLA.ttf);
+  font-family: Tesla;
+}
+
+@font-face {
+  src: url(fonts/Gotham\ Book\ Regular.otf);
+  font-family: Gotham Book;
+}
+
+/******* NAVBAR *******/
+
+.navbar-container {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
+  margin-bottom: -32px;
+}
+
+/******* LOGO *******/
+
+.logo {
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 28px;
+  font-family: Tesla;
+}
+
+.logo a {
+  text-decoration: none;
+  color: black;
+  margin-left: 20px;
+}
+
+/******* NAVBAR LINKS *******/
+
+.nav-links {
+  margin-right: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Gotham Book;
+}
+
+/******* BURGER *******/
+
+.burger {
+  align-self: center;
+  cursor: pointer;
+  display: block;
+  margin-right: 20px;
+}
+
+.burger div {
+  width: 25px;
+  height: 4px;
+  background-color: black;
+  margin: 4px;
+  transition: all 0.3s ease;
+  font-size: 28px;
+}
+
+.burger-link {
+  display: block;
+  background: transparent;
+  padding: 2rem;
+  font-size: 21px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  transition: all 1s ease;
+  cursor: pointer;
+  font-family: Tesla;
+  width: 20%;
+}
+
+hr {
+  background: white;
+  width: 17%;
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+.burger-link:hover {
+  padding-left: 1.5rem;
+}
+
+.burger-links {
+  list-style-type: none;
+  transition: all 0.3s ease;
+  height: 0;
+  overflow: hidden;
+}
+.collapse {
+  background: white;
+  height: 415px;
+  padding-inline-start: 0;
+}
+
+/******* BARS *******/
+
+.bar1 {
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+.bar2 {
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+.bar3 {
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.change .bar2 {
+  opacity: 0;
+}
+.change .bar3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/******* TOP CONTAINER *******/
+
+.b1 {
+  width: 100%;
+  height: 40vh;
+  margin: auto;
+  background: url(./img/tesla-front-page.jpg) no-repeat 50% 50%;
+  top: 0;
+  display: table;
+  background-size: cover;
+}
+
+.b1 .in1 {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+}
+.front-content {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+.front-content h1 {
+  font-family: Tesla;
+  color: black;
+  font-size: 50px;
+  letter-spacing: 2px;
+  padding-bottom: 400px;
+  text-shadow: 0 0 300px #000;
+}
+
+.front-content h3 {
+  margin: 0;
+  padding-top: 150px;
+  color: white;
+  font-size: 21px;
+  line-height: 1;
+  font-family: Gotham Book;
+}
+
+/******* SPEEDOMETER *******/
+
+.speedometer-container {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.speedometer {
+  display: inline-block;
+  color: white;
+  font-size: 37px;
+}
+
+#speed {
+  display: inline-block;
+  color: white;
+  font-size: 37px;
+  margin-right: 5px;
+}
+
+#seconds {
+  display: inline-block;
+  color: white;
+  font-size: 37px;
+  margin-right: 5px;
+}
+
+.mph {
+  display: inline-block;
+  color: white;
+  font-size: 21px;
+}
+
+.sec {
+  display: inline-block;
+  color: white;
+  font-size: 21px;
+}
+
+.acceleration {
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-size: 21px;
+  display: inline-block;
+  border: 2.5px solid #fff;
+  border-radius: 35px;
+  color: #fff;
+  padding: 5px 40px;
+  cursor: pointer;
+}
+
+.acceleration:hover {
+  background-color: white;
+  color: black;
+}
+
+.white-line {
+  border-left: 2px solid white;
+  height: 50px;
+  display: inline-block;
+  color: white;
+  margin: 0 10px;
+  margin-bottom: -18px;
+}
+
+/******* MIDDLE CONTAINER *******/
+
+.middle-container {
+  margin-top: -22px;
+  background-color: black;
+}
+
+.youtube-video {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto 10px auto;
+}
+
+/******* BASE SPECS *******/
+
+.specs {
+  padding-top: 20px;
+  width: 40%;
+  margin: 20px auto 10px auto;
+}
+
+.base-specs {
+  padding-top: 100px;
+  font-family: Tesla;
+  text-transform: uppercase;
+  border-top: none;
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  color: white;
+  font-size: 16px;
+  font-family: Gotham book;
+  font-weight: 500;
+  padding: 20px 0 20px 0;
+  border-top: 1px solid white;
+}
+
+cell-left {
+  text-align: left;
+}
+
+.cell-right {
+  text-align: right;
+}
+
+.founders {
+  padding-bottom: 0px;
+}
+
+.reservations {
+  padding: 0;
+  border-top: none;
+  padding-bottom: 150px;
+}
+
+.grey {
+  color: #cdd1da;
+}
+
+/******* CHARGING *******/
+
+.b2 {
+  width: 100%;
+  height: 30vh;
+  margin: auto;
+  background: url(./img/tesla-charging.jpg) no-repeat 50% 50%;
+  top: 0;
+  display: table;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.b2 .in2 {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+}
+.charging-content {
+  max-width: 900px;
+  margin: auto;
+  text-align: left;
+}
+
+.charging-heading {
+  font-family: Tesla;
+  color: white;
+  font-size: 28px;
+  margin-top: 170px;
+  margin-bottom: 0px;
+  text-shadow: 0 0 300px #000;
+}
+
+.charging-content h2 {
+  font-family: Tesla;
+  color: black;
+  font-size: 28px;
+  letter-spacing: 2px;
+  margin-top: 120px;
+  margin-bottom: 0px;
+  text-shadow: 0 0 300px #000;
+}
+
+.charging-content p {
+  color: black;
+  font-family: Gotham Book;
+  padding-top: 15px;
+  padding-bottom: 740px;
+  text-shadow: 0 0 300px #000;
+  font-size: 21px;
+  line-height: 32px;
+  initial-letter: 3px;
+  margin-top: 0;
+  margin-left: 0;
+  width: 62%;
+}
+
+/******* INTERIOR *******/
+
+.interior-container {
+  margin-top: 100px;
+  min-width: 100%;
+  min-height: 340px;
+  vertical-align: middle;
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.interior-heading {
+  color: white;
+  letter-spacing: 2px;
+  margin: 50px 0px 15px 0px;
+  font-size: 28px;
+  text-align: center;
+  font-family: Tesla;
+}
+
+.interior {
+  margin: 0;
+  color: white;
+  font-size: 21px;
+  font-family: Gotham Book;
+  width: 35%;
+  initial-letter: 3px;
+  line-height: 32px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/******* AERODYNAMICS *******/
+
+.b3 {
+  width: 100%;
+  height: 30vh;
+  margin: auto;
+  background: url(./img/tesla-aerodynamics.jpg) no-repeat 50% 50%;
+  top: 0;
+  display: table;
+  background-size: cover;
+}
+.b3 .in3 {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+}
+.aerodynamics-content {
+  max-width: 900px;
+  margin: auto;
+  text-align: left;
+}
+.aerodynamics-content h2 {
+  font-family: Tesla;
+  color: white;
+  font-size: 28px;
+  letter-spacing: 2px;
+  margin-top: 120px;
+  margin-bottom: 0px;
+  text-shadow: 0 0 300px #000;
+}
+
+.aerodynamics-content p {
+  color: white;
+  font-family: Gotham Book;
+  padding-top: 15px;
+  padding-bottom: 340px;
+  text-shadow: 0 0 300px #000;
+  font-size: 21px;
+  line-height: 32px;
+  initial-letter: 3px;
+  margin-top: 0;
+  margin-left: 0;
+  width: 50%;
+}
+
+/******* ROOF TOP *******/
+
+.roof-top-container {
+  margin-top: 100px;
+  min-width: 100%;
+  min-height: 600px;
+  vertical-align: middle;
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.roof-top-heading {
+  color: white;
+  margin: 50px 0px 15px 0px;
+  font-size: 28px;
+  letter-spacing: 2px;
+  font-family: Tesla;
+}
+
+.roof-top {
+  margin: 0;
+  color: white;
+  font-size: 21px;
+  font-family: Gotham Book;
+  width: 35%;
+  initial-letter: 3px;
+  line-height: 32px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.button {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+button {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: 2.5px solid #fff;
+  border-radius: 35px;
+  outline: 0px;
+  font-size: 16px;
+  padding: 7px 33px;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+/******* BOTTOM CONTAINER *******/
+
+.copyright {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+/******* TO TOP ARROW *******/
+
+.to-top {
+  cursor: pointer;
+  background: transparent;
+  position: fixed;
+  bottom: 16px;
+  right: 0px;
+  width: 40px;
+  height: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+}
+
+.to-top.active {
+  cursor: pointer;
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+/******* SMOOTH SCROLL ANIMATION *******/
+
+h1 {
+  position: relative;
+  transition: 1s;
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+h1[data-scroll="in"] {
+  transform: translateX(0);
+  transition-delay: 0.2s;
+  opacity: 1;
+}
+
+h2 {
+  position: relative;
+  transition: 1s;
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+h2[data-scroll="in"] {
+  transform: translateX(0);
+  transition-delay: 0.1s;
+  opacity: 1;
+}
+
+h3 {
+  position: relative;
+  transition: 1s;
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+h3[data-scroll="in"] {
+  transform: translateX(0);
+  transition-delay: 0.2s;
+  opacity: 1;
+}
+
+p {
+  position: relative;
+  transition: 1s;
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+p[data-scroll="in"] {
+  transform: translateX(0);
+  transition-delay: 0.2s;
+  opacity: 1;
+}
+
+td {
+  position: relative;
+  transition: 1s;
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+td[data-scroll="in"] {
+  transform: translateX(0);
+  transition-delay: 0.2s;
+  opacity: 1;
+}
+
+/******* MEDIA QUERIES *******/
+
+@media (max-width: 1200px) {
+  .mph {
+    font-size: 1em;
+  }
+  .sec {
+    font-size: 1em;
+  }
+  .front-content h1 {
+    font-size: 1.3em;
+  }
+
+  .front-content h3 {
+    font-size: 1em;
+  }
+
+  .specs {
+    width: 45%;
+  }
+
+  .base-specs {
+    font-size: 1.3em;
+  }
+
+  td {
+    font-size: 1em;
+  }
+
+  .burger-link {
+    font-size: 1em;
+  }
+
+  .charging-content h2 {
+    font-size: 1.3em;
+  }
+
+  .charging-content p {
+    font-size: 1em;
+  }
+
+  .interior-heading {
+    font-size: 1.3em;
+  }
+
+  .interior {
+    font-size: 1em;
+  }
+
+  .aerodynamics-content h2 {
+    font-size: 1.3em;
+  }
+
+  .aerodynamics-content p {
+    font-size: 1em;
+  }
+
+  .roof-top-heading {
+    font-size: 1.3em;
+  }
+
+  .roof-top {
+    font-size: 1em;
+  }
+
+  #btn1 {
+    font-size: 1em;
+  }
+
+  .acceleration {
+    font-size: 1em;
+  }
+
+  .copyright {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 1100px) {
+  .mph {
+    font-size: 2.3em;
+  }
+  .sec {
+    font-size: 2.3em;
+  }
+  .front-content h1 {
+    font-size: 1.8em;
+  }
+
+  .front-content h3 {
+    font-size: 1.5em;
+  }
+
+  .specs {
+    width: 50%;
+  }
+
+  .base-specs {
+    font-size: 1.8em;
+  }
+
+  td {
+    font-size: 1.5em;
+  }
+
+  .burger-link {
+    font-size: 1.5em;
+  }
+
+  .charging-content h2 {
+    font-size: 1.8em;
+  }
+
+  .charging-content p {
+    font-size: 1.5em;
+  }
+
+  .interior-heading {
+    font-size: 1.8em;
+  }
+
+  .interior {
+    font-size: 1.5em;
+  }
+
+  .aerodynamics-content h2 {
+    font-size: 1.8em;
+  }
+
+  .aerodynamics-content p {
+    font-size: 1.5em;
+  }
+
+  .roof-top-heading {
+    font-size: 1.8em;
+  }
+
+  .roof-top {
+    font-size: 1.5em;
+  }
+
+  #btn1 {
+    font-size: 1.3em;
+  }
+
+  .acceleration {
+    font-size: 1.3em;
+  }
+
+  .copyright {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 990px) {
+  .mph {
+    font-size: 2.3em;
+  }
+  .sec {
+    font-size: 2.3em;
+  }
+  .front-content h1 {
+    font-size: 2.3em;
+  }
+
+  .front-content h3 {
+    font-size: 2em;
+  }
+
+  .specs {
+    width: 55%;
+  }
+
+  .base-specs {
+    font-size: 2.3em;
+  }
+
+  td {
+    font-size: 2em;
+  }
+
+  .burger-link {
+    font-size: 1.5em;
+  }
+
+  .charging-content h2 {
+    font-size: 2.3em;
+  }
+
+  .charging-content p {
+    font-size: 2em;
+  }
+
+  .interior-heading {
+    font-size: 2.3em;
+  }
+
+  .interior {
+    font-size: 2em;
+  }
+
+  .aerodynamics-content h2 {
+    font-size: 2.3em;
+  }
+
+  .aerodynamics-content p {
+    font-size: 2em;
+  }
+
+  .roof-top-heading {
+    font-size: 2.3em;
+  }
+
+  .roof-top {
+    font-size: 2em;
+  }
+
+  #btn1 {
+    font-size: 1.5em;
+  }
+
+  .acceleration {
+    font-size: 1.8em;
+  }
+
+  .copyright {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 760px) {
+  .mph {
+    font-size: 2.6em;
+  }
+  .sec {
+    font-size: 2.6em;
+  }
+  .front-content h1 {
+    font-size: 2.6em;
+  }
+
+  .front-content h3 {
+    font-size: 2.3em;
+  }
+
+  .specs {
+    width: 60%;
+  }
+
+  .base-specs {
+    font-size: 2.6em;
+  }
+
+  td {
+    font-size: 2.3em;
+  }
+
+  .burger-link {
+    font-size: 2.3em;
+  }
+
+  .charging-content h2 {
+    font-size: 2.6em;
+  }
+
+  .charging-content p {
+    font-size: 2.3em;
+  }
+
+  .interior-heading {
+    font-size: 2.6em;
+  }
+
+  .interior {
+    font-size: 2.3em;
+  }
+
+  .aerodynamics-content h2 {
+    font-size: 2.6em;
+  }
+
+  .aerodynamics-content p {
+    font-size: 2.3em;
+  }
+
+  .roof-top-heading {
+    font-size: 2.6em;
+  }
+
+  .roof-top {
+    font-size: 2.3em;
+  }
+
+  #btn1 {
+    font-size: 2em;
+  }
+
+  .acceleration {
+    font-size: 2em;
+  }
+
+  .copyright {
+    font-size: 2.3em;
+  }
+}
+
+@media (max-width: 550px) {
+  .mph {
+    font-size: 3em;
+  }
+
+  .sec {
+    font-size: 3em;
+  }
+  .front-content h1 {
+    font-size: 3em;
+  }
+
+  .front-content h3 {
+    font-size: 3em;
+  }
+
+  .specs {
+    width: 65%;
+  }
+
+  .base-specs {
+    font-size: 3em;
+  }
+
+  td {
+    font-size: 3em;
+  }
+
+  .burger-link {
+    font-size: 3em;
+  }
+
+  .charging-content h2 {
+    font-size: 3em;
+  }
+
+  .charging-content p {
+    font-size: 3em;
+  }
+
+  .interior-heading {
+    font-size: 3em;
+  }
+
+  .interior {
+    font-size: 3em;
+  }
+
+  .aerodynamics-content h2 {
+    font-size: 3em;
+  }
+
+  .aerodynamics-content p {
+    font-size: 3em;
+  }
+
+  .roof-top-heading {
+    font-size: 2em;
+  }
+
+  .roof-top {
+    font-size: 3em;
+  }
+
+  #btn1 {
+    font-size: 2.5em;
+  }
+
+  .acceleration {
+    font-size: 2.5em;
+  }
+
+  .copyright {
+    font-size: 2.5em;
+  }
+}

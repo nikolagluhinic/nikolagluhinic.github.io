@@ -1,0 +1,1097 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: white;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  margin: auto;
+  padding: 0 15px;
+  background: #fff;
+}
+
+/******* HEADER *******/
+
+header {
+  width: 100%;
+  min-height: 70px;
+  border-bottom: 1px solid #555;
+  overflow: hidden;
+  position: relative;
+}
+
+header .logo {
+  float: left;
+  line-height: 70px;
+  text-transform: uppercase;
+  text-shadow: 4px 5px 10px #ddd;
+}
+
+header ul {
+  float: right;
+  list-style: none;
+}
+
+header ul li {
+  display: inline-block;
+  line-height: 30px;
+}
+
+header ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  opacity: 0.7;
+  padding: 20px 20px;
+  display: block;
+}
+
+.line::after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: width 0.3s;
+}
+
+.line:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+header ul li a.active {
+  padding: 7px 12px;
+  background: transparent;
+  border-radius: 50px;
+  color: #0f9d58;
+}
+
+header .menu {
+  position: absolute;
+  top: 37px;
+  right: 10px;
+  transform: translateY(-50%);
+  background: black;
+  color: white;
+  opacity: 0.7;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  display: none;
+}
+
+/******* SECTION *******/
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 20px;
+}
+
+section .banner {
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+}
+
+section .thumb {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/******* BANNER *******/
+
+.banner .thumb img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  animation: fade 1s ease-in-out;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.banner .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.banner .text h2 {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-shadow: -1px 3px 0 white;
+  font-size: 3em;
+  color: #0f9d58;
+  margin-bottom: 15px;
+}
+
+.banner .text input {
+  width: 500px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background: #0009;
+  color: white;
+  padding: 0 5px;
+}
+
+.banner .text button {
+  width: 100px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background: #333;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.prev,
+.next {
+  background: white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3em;
+  padding: 0 10px;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover,
+.next:hover {
+  opacity: 1;
+}
+
+/******* SLIDE ANIMATION *******/
+
+.slide-nav {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.slide-nav .nav-dot {
+  background: black;
+  width: 30px;
+  height: 30px;
+  margin: 0 20px;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 12px;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.slide-nav .nav-dot.dot-active {
+  background-color: #0f9d58;
+}
+
+/******* ABOUT US *******/
+
+#about-us {
+  width: 100%;
+  position: relative;
+  margin-top: 20px;
+}
+
+#about-us h2 {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+}
+
+#about-us .content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#about-us .content .text {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+#about-us .content .text p {
+  line-height: 1.4;
+  margin: 10px 0;
+}
+
+#about-us .content .text a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background: #555;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 3px;
+  box-shadow: 4px 5px 10px #ddd;
+  transition: 0.3s ease-in-out;
+}
+
+#about-us .thumb {
+  flex: 1;
+  min-width: 300px;
+  min-height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#about-us .thumb .thumb-box {
+  flex: 1;
+  min-width: 300px;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 4px 5px 10px #ddd;
+  transition: 0.5s ease-in-out;
+}
+
+#about-us .thumb .thumb-box img {
+  width: 100%;
+  min-height: 300px;
+  display: block;
+  object-fit: cover;
+}
+
+#about-us .thumb .thumb-box h3 {
+  height: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 40px;
+}
+
+#about-us .thumb .thumb-box:hover,
+#about-us .content .text a:hover {
+  box-shadow: none;
+}
+
+#about-us .team h3 {
+  font-size: 1.5em;
+  margin: 15px 0;
+}
+
+#about-us .team p {
+  margin: 10px 0;
+}
+
+#about-us a {
+  text-align: center;
+  text-decoration: none;
+  margin-right: 10px;
+  color: #0f9d58;
+  display: inline-block;
+}
+
+#about-us .team a:hover {
+  font-weight: 900;
+  color: black;
+}
+
+.facebook {
+  color: #3b5998;
+}
+
+.instagram {
+  color: #c32aa3;
+}
+
+.twitter {
+  color: #1da1f2;
+}
+
+.pinterest {
+  color: #bd081c;
+}
+
+/******* PROPERTIES (CASTLES) *******/
+
+#properties {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#properties h2 {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  border-bottom: 1px solid black;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+#properties .content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#properties .content .box {
+  flex: 1;
+  min-width: 300px;
+  min-height: 500px;
+  overflow: hidden;
+  margin: 15px;
+  padding: 15px;
+  box-shadow: 4px 5px 10px #ddd;
+  cursor: pointer;
+}
+
+#properties .content .box:hover {
+  box-shadow: none;
+}
+
+#properties .content .box img {
+  width: 100%;
+  height: 300px;
+  display: block;
+  object-fit: cover;
+}
+
+#properties h3 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top: 10px;
+}
+
+#properties span {
+  color: #0f9d58;
+  padding-right: 10px;
+}
+
+#properties p {
+  line-height: 1.4;
+  margin: 5px 0;
+}
+
+#properties a {
+  text-decoration: none;
+  color: white;
+  background: #888;
+  display: block;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+#properties a:hover {
+  background: #555;
+}
+
+/******* SERVICES *******/
+
+#services {
+  width: 100%;
+  position: relative;
+  margin-top: 20px;
+}
+
+#services h2 {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  border-bottom: 1px solid black;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+#services .content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+#services .content .card {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+
+#services .content .card i {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  font-size: 3em;
+  color: #0f9d58;
+  line-height: 100px;
+}
+
+#services .content .card .images {
+  width: 100%;
+  height: 250px;
+  display: block;
+  object-fit: cover;
+}
+
+#services .content .card h3 {
+  margin: 10px;
+  font-size: 1.3em;
+  letter-spacing: 4px;
+}
+
+#services .content .card p {
+  color: #888;
+  margin: 10px 0;
+}
+
+#services p {
+  margin-left: 20px;
+}
+
+#services .content .card.circle .images {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: auto;
+  border: none;
+  display: block;
+  object-fit: cover;
+}
+
+#services .content .card.circle h3 {
+  color: #0f9d58;
+}
+
+/******* CONTACT *******/
+
+#contact {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#contact h2 {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  border-bottom: 1px solid black;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+#contact .content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px 10px;
+}
+
+#contact form {
+  flex: 1;
+  min-width: 300px;
+  padding: 30px 15px;
+}
+
+#contact form input,
+#contact form textarea,
+#contact form button {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #555;
+  margin: 15px 0;
+  resize: none;
+  color: white;
+}
+
+#contact form button i .facebook {
+  color: red;
+}
+
+#contact .map {
+  min-width: 300px;
+  flex: 1;
+  padding: 30px 15px;
+}
+
+#contact .map iframe {
+  width: 100%;
+}
+
+#contact form button {
+  background: #888888;
+  height: 40px;
+  letter-spacing: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+#contact form button:hover {
+  background: #555;
+  height: 40px;
+  letter-spacing: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+#contact .box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px 10px;
+}
+
+#contact .box .text {
+  flex: 1;
+  margin: 15px;
+  min-width: 300px;
+}
+
+#contact .box .text h3 {
+  color: #0f9d58;
+  letter-spacing: 3px;
+}
+
+#contact .box .text p {
+  line-height: 1.4;
+  margin: 10px 0;
+}
+
+#contact .box .text span {
+  color: #0f9d58;
+}
+
+/******* FOOTER *******/
+
+footer {
+  width: 100%;
+  background: #0f9d58;
+  margin: auto;
+  color: white;
+}
+
+footer .content {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer .content .box {
+  flex: 1;
+  min-width: 300px;
+  margin: 30px 10px;
+}
+
+footer .content .box h2 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+footer .content .box p {
+  opacity: 0.5;
+  margin: 15px 0;
+}
+
+footer .content .box h3 {
+  opacity: 0.7;
+  letter-spacing: 2px;
+}
+
+footer .content .box i {
+  color: white;
+}
+
+footer .row {
+  background-color: white;
+  border-top: 1px solid #555;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+footer .row p {
+  color: #555;
+  flex: 1;
+  min-width: 470px;
+  margin-left: 15px;
+}
+
+footer .row p span {
+  color: black;
+}
+
+footer .row .social {
+  cursor: pointer;
+  flex: 1;
+  min-width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+footer .row .social img {
+  width: 35px;
+  height: 35px;
+}
+
+footer .row .social i {
+  color: white;
+  margin: 5px;
+}
+
+footer .row .social a {
+  text-decoration: none;
+  color: white;
+  padding: 0 15px;
+}
+
+footer .row .social a:hover {
+  font-weight: 900;
+  color: black;
+}
+
+/******* SCROLL ANIMATION *******/
+
+.lazy {
+  position: relative;
+  transition: 1s;
+  transform: translateY(10px);
+  opacity: 0;
+}
+
+.lazy[data-scroll="in"] {
+  transform: translateX(0);
+  transition-delay: 0.1s;
+  opacity: 1;
+}
+
+/******* FADING IMAGES *******/
+
+.fade-container {
+  min-height: 300px;
+  min-width: 240px;
+  position: relative;
+}
+
+.fade-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.fade::after {
+  content: "";
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  background: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5 ease;
+  letter-spacing: 5px;
+}
+
+.fade:hover::after {
+  opacity: 0.5;
+}
+
+.building::after {
+  content: "Headquarters";
+}
+
+.office::after {
+  content: "Board Office";
+}
+
+.manager::after {
+  content: "Lucie Mays";
+}
+
+.ceo::after {
+  content: "Wesley Moyer";
+}
+
+.agent::after {
+  content: "Klara Wiggins";
+}
+
+.germany::after {
+  content: "Germany";
+}
+
+.romania::after {
+  content: "Romania";
+}
+
+.czech-republic::after {
+  content: "Czech Republic";
+}
+
+.france::after {
+  content: "France";
+}
+
+.ireland::after {
+  content: "Ireland";
+}
+
+.croatia::after {
+  content: "Croatia";
+}
+
+.switzerland::after {
+  content: "Switzerland";
+}
+
+.italy::after {
+  content: "Italy";
+}
+
+.slovakia::after {
+  content: "Slovakia";
+}
+
+.money::after {
+  content: "10%";
+}
+
+.offices::after {
+  content: "Offices";
+}
+
+.personal::after {
+  content: "Our Service";
+}
+
+/******* REGISTER/LOGIN *******/
+
+/******* LOGIN *******/
+
+.login-container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: radial-gradient(white, #525252);
+  z-index: 99;
+  clip-path: circle(0 at 50% 50%);
+  transition: 0.5s ease-in-out;
+}
+
+#btn-close {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 2em;
+  color: black;
+  cursor: pointer;
+}
+
+.login-box {
+  width: 300px;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 0 20px;
+  box-shadow: 0 0 20px #000;
+}
+
+.login-box h2 {
+  font-size: 3em;
+  text-align: center;
+  margin: 20px 0;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.login-box label {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  margin: 10px 0;
+  background: #eee;
+}
+
+.login-box input {
+  width: 210px;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: #eee;
+}
+
+.login-box i {
+  color: white;
+  width: 40px;
+  text-align: center;
+}
+
+.login-box i.fas.fa-user::before {
+  color: black;
+}
+
+.login-box i.fas.fa-lock::before {
+  color: black;
+}
+
+.login-box i.fas.fa-envelope::before {
+  color: black;
+}
+
+.login-box .check {
+  background: white;
+  height: 15px;
+  font-size: 12px;
+}
+
+.login-box [type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  transform: translateY(3px);
+}
+
+.login-box button {
+  width: 100%;
+  height: 40px;
+  background: #0f9d58;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top: 10px;
+}
+
+.login-box p {
+  text-align: center;
+  margin: 5px 0;
+  color: #555;
+}
+
+.login-box a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+}
+
+.login-box .btn {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.login-box .btn.btn-fb {
+  background: #0b5bb6;
+  margin-bottom: 20px;
+}
+
+.login-box .btn.btn-gg {
+  background: red;
+}
+
+a.next-log {
+  color: #0f9d58;
+}
+
+a.next-log:hover {
+  color: black;
+}
+
+.login-box .check span {
+  color: black;
+}
+
+.hidden {
+  display: none;
+}
+
+/******* TO TOP ARROW *******/
+
+.to-top {
+  cursor: pointer;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+}
+
+.to-top.active {
+  cursor: pointer;
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.to-top i {
+  color: white;
+}
+
+#partner .thumb .thumb-box .social i .face {
+  color: #3b5998;
+}
+
+/******* RESPONSIVE *******/
+
+@media (max-width: 1000px) {
+  header ul {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    z-index: 90;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    transition: 0.5s ease-in-out;
+  }
+  header .menu {
+    display: block;
+    line-height: normal;
+  }
+  header ul.menu-toggle {
+    left: 0;
+  }
+  header ul li {
+    line-height: normal;
+    display: block;
+  }
+  header ul li a {
+    display: inline-block;
+  }
+
+  footer .row {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 650px) {
+  .banner .text input {
+    width: 300px;
+  }
+  .banner .text button {
+    margin-top: 10px;
+  }
+  .banner .text h2 {
+    letter-spacing: 2px;
+    font-size: 2.5em;
+  }
+  section .banner {
+    height: 480px;
+  }
+  header ul li a {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  footer .row p,
+  footer .row .social {
+    min-width: 300px;
+    margin: 0;
+  }
+
+  footer .row .social a {
+    padding: 10px;
+  }
+  header ul li a {
+    display: inline-block;
+  }
+  #properties .content .box {
+    margin: 15px 0;
+  }
+  #about .thumb .thumb-box {
+    margin: 10px 0;
+  }
+  #contact .box .text {
+    margin: 15px 0;
+  }
+  #contact form,
+  #contact .map {
+    padding: 30px 0;
+  }
+  h1 {
+    visibility: hidden;
+  }
+}
+
+@media (max-height: 500px) {
+  .login-box {
+    transform: translate(-50%, -50%) scale(0.65);
+  }
+  header ul li a {
+    display: inline-block;
+  }
+}

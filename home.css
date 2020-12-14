@@ -1,0 +1,477 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-family: "Merriweather", serif;
+  background-color: #dfe8eb;
+}
+
+/******* NAVBAR *******/
+
+.header {
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 128px;
+  width: 100%;
+  min-height: 70px;
+  background-color: #dfe8eb;
+}
+
+.logo a {
+  font-size: 22px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #4a83b5;
+  padding: 28px 200px 28px 28px;
+  font-family: "Merriweather", serif;
+}
+
+.nav-btn {
+  align-self: center;
+  cursor: pointer;
+  display: none;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  margin: 0.5rem;
+  background: #4a83b5;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-10px, 10px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-7px, -8px);
+}
+
+.res-nav-links {
+  list-style-type: none;
+  transition: all 1s ease;
+  height: 0;
+  overflow: hidden;
+}
+
+.nav-collapse {
+  height: 240px;
+}
+
+.responsive-link {
+  display: block;
+  background: transparent;
+  padding: 1rem;
+  font-size: 21px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #4a83b5;
+  transition: all 1s ease;
+  cursor: pointer;
+}
+
+.responsive-link:hover {
+  padding-left: 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  font-size: 1.5rem;
+  padding-left: 150px;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: #4a83b5;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+a {
+  color: #4694b3;
+  font-family: "Montserrat", sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+  font-size: 21px;
+}
+
+a:hover {
+  color: #365866;
+}
+
+/******* TOP CONTAINER *******/
+
+.top-container {
+  width: 100%;
+  height: 681px;
+  position: relative;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #dfe8eb;
+}
+
+h1 {
+  color: #4a93b0;
+  font-size: 5.625rem;
+  font-family: "Sacramento", cursive;
+  font-weight: 550;
+}
+
+.developer {
+  color: #4694b3;
+  font-size: 25px;
+}
+
+.illustration {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  height: 450px;
+}
+
+/******* MIDDLE CONTAINER *******/
+
+.middle-container {
+  padding: 100px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h2 {
+  color: #1e6782;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+  padding-bottom: 20px;
+}
+
+h3 {
+  color: #4694b3;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 10px;
+  font-size: 1.5em;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro {
+  width: 30%;
+  margin: auto;
+}
+
+.first-avatar {
+  width: 150px;
+  height: 150px;
+}
+
+.heart {
+  color: red;
+}
+
+hr {
+  border: dotted #dfe8eb 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 70px auto;
+}
+
+.skills {
+  width: 50%;
+  margin: 50px auto 150px auto;
+  text-align: left;
+  border-radius: 50%;
+}
+
+.design {
+  width: 50%;
+  margin: 100px auto 50px auto;
+  text-align: left;
+  border-radius: 50%;
+}
+
+.contact {
+  width: 30%;
+  margin: auto;
+}
+
+.second-avatar {
+  width: 150px;
+  height: 150px;
+  float: right;
+  margin-left: 60px;
+  display: flex;
+}
+
+p {
+  line-height: 2;
+  font-size: 16px;
+}
+
+/******* BOTTOM CONTAINER *******/
+
+.bottom-container {
+  background: #dfe8eb;
+  padding: 50px 0 0px;
+  height: 200px;
+}
+
+.footer-link a {
+  padding: 30px;
+  font: 10px;
+}
+
+.copyright {
+  color: #4694b3;
+  padding: 30px 100px;
+}
+
+/******* CSS AUTO SLIDE ANIMATION *******/
+
+.slider {
+  animation: slide 3s;
+  animation: slide 10s infinite;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+  margin-right: 60px;
+  width: 150px;
+  height: 150px;
+  display: flex;
+}
+
+@keyframes slide {
+  0% {
+    background-image: url(./img/html-5.png);
+  }
+
+  20% {
+    background-image: url(./img/html-5.png);
+  }
+
+  20.1% {
+    background-image: url(./img/css-3.png);
+  }
+
+  40% {
+    background-image: url(./img/css-3.png);
+  }
+
+  40.01% {
+    background-image: url(./img/javascript.png);
+  }
+
+  60% {
+    background-image: url(./img/javascript.png);
+  }
+
+  60.01% {
+    background-image: url(./img/react.png);
+  }
+
+  80% {
+    background-image: url(./img/react.png);
+  }
+
+  80.01% {
+    background-image: url(./img/api.png);
+  }
+
+  100% {
+    background-image: url(./img/api.png);
+  }
+}
+
+/******* MEDIA QUERIES *******/
+
+@media (max-width: 1200px) {
+  .logo a {
+    font-size: 1em;
+  }
+
+  a {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 2em;
+    margin: auto;
+  }
+
+  h3 {
+    font-size: 2em;
+    margin: auto;
+    margin-bottom: 1em;
+  }
+
+  p {
+    font-size: 1em;
+    text-align: center;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 1100px) {
+  .nav-btn {
+    align-self: center;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 10em;
+  }
+
+  .nav-links {
+    display: none;
+    cursor: pointer;
+  }
+
+  .logo a {
+    line-height: 2em;
+    font-size: 1.5em;
+  }
+
+  .responsive-link {
+    font-size: 2em;
+  }
+
+  a {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1.2em;
+    text-align: center;
+    display: inline-block;
+  }
+
+  img {
+    width: 2em;
+  }
+
+  h2 {
+    font-size: 2.5em;
+    margin: auto;
+  }
+
+  h3 {
+    font-size: 2.5em;
+    margin: auto;
+    margin-bottom: 1em;
+  }
+
+  .intro {
+    width: 80%;
+    text-align: center;
+  }
+
+  hr {
+    width: 10%;
+  }
+
+  .skills {
+    width: 80%;
+    text-align: center;
+  }
+
+  .slider {
+    float: none;
+    margin: auto;
+    margin-bottom: 3em;
+  }
+
+  .design {
+    width: 80%;
+    text-align: center;
+  }
+
+  .second-avatar {
+    float: none;
+    margin: auto;
+    margin-bottom: 3em;
+  }
+
+  .contact {
+    width: 80%;
+    text-align: center;
+  }
+
+  .bottom-container {
+    height: 200px;
+  }
+}
+
+@media (max-width: 990px) {
+  .logo a {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 2em;
+  }
+
+  a {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 760px) {
+  .logo a {
+    padding: 5px;
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 550px) {
+  .header {
+    width: 100%;
+  }
+
+  .logo a {
+    padding: 5px;
+    font-size: 1.5em;
+  }
+
+  .bar {
+    font-size: 5px;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  a {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+}
