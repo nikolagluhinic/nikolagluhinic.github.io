@@ -1,5 +1,6 @@
 ### Hi there, I'm Nikola  👋
-
+<br />
+<br />
 
 - 🔭 I just launched my Portfolio 😃
 - 🌱 I’m currently learning everything 🤣
@@ -23,7 +24,7 @@
 
 ---
 
-### 🤓 Programing Courses I Learned
+### 🤓 Programing Courses I've Learned
 
 <!-- COURSES:START -->
 - [The Web Developer Bootcamp](https://www.udemy.com/course/the-web-developer-bootcamp/)
