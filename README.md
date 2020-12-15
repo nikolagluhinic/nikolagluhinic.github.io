@@ -52,4 +52,5 @@
 - [Gentle Explanation of "this" in JavaScript](https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/)
 - [When 'Not' to Use Arrow Functions](https://dmitripavlutin.com/when-not-to-use-arrow-functions-in-javascript/)
 - [A Simple Explanation of Scope in JavaScript](https://dmitripavlutin.com/javascript-scope/)
+- [Two Quick Ways To Reduce React App’s Size In Production](https://medium.com/@rajaraodv/two-quick-ways-to-reduce-react-apps-size-in-production-82226605771a)
 <!-- BLOG-POST-LIST:END -->
