@@ -7,6 +7,7 @@
 - 👯 I’m looking to collaborate with better developers than myself
 - 🥅 2020 Goals: learn Typescript 🤓
 - ⚡ Fun fact: I love LOTR and Harry Potter 
+<br />
 
 ### Languages and Tools:
 
