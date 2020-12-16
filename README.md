@@ -6,7 +6,7 @@
 -  I’m currently learning everything 🤣
 -  I’m looking to collaborate with better developers than myself
 -  2021 Goals: learn Typescript 🤓
--  Fun fact: I love LOTR, Harry Potter and Pokemons (Nidoking) 
+-  Fun fact: I love LOTR and Harry Potter
 <br />
 
 ### Languages and Tools:
