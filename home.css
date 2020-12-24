@@ -274,41 +274,26 @@ p {
     background-image: url(./img/html-5.png);
   }
 
-  20% {
+  33% {
     background-image: url(./img/html-5.png);
   }
 
-  20.1% {
+  33.1% {
     background-image: url(./img/css-3.png);
   }
 
-  40% {
+  66% {
     background-image: url(./img/css-3.png);
   }
 
-  40.01% {
+  66.01% {
     background-image: url(./img/javascript.png);
-  }
-
-  60% {
-    background-image: url(./img/javascript.png);
-  }
-
-  60.01% {
-    background-image: url(./img/react.png);
-  }
-
-  80% {
-    background-image: url(./img/react.png);
-  }
-
-  80.01% {
-    background-image: url(./img/api.png);
   }
 
   100% {
-    background-image: url(./img/api.png);
+    background-image: url(./img/javascript.png);
   }
+
 }
 
 /******* MEDIA QUERIES *******/
