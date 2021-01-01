@@ -546,10 +546,7 @@ section .thumb {
   min-width: 300px;
   flex: 1;
   padding: 30px 15px;
-}
-
-#contact .map iframe {
-  width: 100%;
+  min-height: 400px;
 }
 
 #contact form button {
