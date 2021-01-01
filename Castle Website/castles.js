@@ -95,7 +95,41 @@ banner.addEventListener("mouseout", () => {
   autoSlide();
 });
 
+/////// GOOGLE MAPS API ///////
 
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  const neuschwanstein = { lat: 47.5576, lng: 10.7498 };
+  
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.querySelector(".map"), {
+    zoom: 4,
+    center: neuschwanstein,
+  });
+
+  addMarker({lat: 47.5576, lng: 10.7498})  //NEUSCHWANSTEIN CASTLE
+  addMarker({lat: 45.3600, lng: 25.5426})  //PELEȘ CASTLE
+  addMarker({lat: 49.0511, lng: 14.4416})  //HLUBOKÁ CASTLE
+  addMarker({lat: 48.6361, lng: 1.5115})  //MONT SAINT MICHEL
+  addMarker({lat: 45.7495, lng: 22.8883})  //CORVIN CASTLE
+  addMarker({lat: 53.5616, lng: -9.8893}) //KYLEMORE ABBEY
+  addMarker({lat: 46.2577, lng: 15.9451})  //TRAKOŠĆAN CASTLE
+  addMarker({lat: 46.4142, lng: 6.9275})  //CHILLON CASTLE
+  addMarker({lat: 45.7025, lng: 13.7124})  //MIRAMARE CASTLE
+  addMarker({lat: 48.7799, lng: 18.5778})  //BOJNICE CASTLE
+  addMarker({lat: 48.3236, lng: 8.9674})  //HOHENZOLLERN CASTLE
+  addMarker({lat: 47.3249, lng: 1.0703})  //CHATEAU DE CHENONCEAU
+
+  function addMarker(coordinates){
+// The marker, positioned at Uluru
+const marker = new google.maps.Marker({
+  position: coordinates,
+  map: map,
+});
+  }
+  
+}
 
 /////// TO TOP ARROW ///////
 
