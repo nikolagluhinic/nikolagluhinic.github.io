@@ -143,6 +143,9 @@ window.addEventListener("scroll", () => {
   }
 });
 
+/////// CURRENT YEAR ///////
+
+document.getElementById("year").textContent = new Date().getFullYear();
 
 /////// SCROLL TEXT LIBRARY ///////
 
