@@ -28,7 +28,7 @@
 ### 🤓 Programing Courses I've Learned
 
 <!-- COURSES:START -->
-- [The Web Developer Bootcamp](https://www.udemy.com/course/the-web-developer-bootcamp/)
+- [The Web Developer Bootcamp - Colt Steele ](https://www.udemy.com/course/the-web-developer-bootcamp/)
 - [The Complete 2020 Web Development Bootcamp - Dr. Angela Yu ](https://www.udemy.com/course/the-complete-web-development-bootcamp/)
 <!-- COURSES:END -->
 
