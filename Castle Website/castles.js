@@ -143,7 +143,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
-/////// CURRENT YEAR ///////
+/////// COPYRIGHT CURRENT YEAR ///////
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
