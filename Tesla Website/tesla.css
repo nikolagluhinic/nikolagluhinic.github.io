@@ -75,7 +75,7 @@ html {
   height: 4px;
   background-color: black;
   margin: 4px;
-  transition: all 0.3s ease;
+  transition: all 1s ease;
   font-size: 28px;
 }
 
